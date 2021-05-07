@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node index.js",
-    "build": "node install"
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",
