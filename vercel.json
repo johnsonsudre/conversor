@@ -2,8 +2,8 @@
   "version": 2,
   "builds": [
       {
-          "src": "./index.js",
-          "use": "@vercel/node"
+          "src": "index.js",
+          "use": "@now/node-server"
       }
   ],
   "routes": [
@@ -14,16 +14,12 @@
       {
           "src": "/",
           "dest": "/index.js",
-          "methods": [
-              "GET"
-          ]
+          "methods": ["GET"]
       },
       {
           "src": "/quotation",
-          "dest": "./views/quotation.ejs",
-          "methods": [
-              "GET"
-          ]
+          "dest": "/index.js",
+          "methods": ["GET"]
       }
   ]
 }
