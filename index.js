@@ -3,7 +3,7 @@ const { read } = require("fs");
 const path = require("path");
 const { convert, toMoney } = require("./lib/convert");
 
-process.env.PORT = 3000;
+const port = process.env.PORT || 3000;
 
 // CONFIG
 const app = express();
@@ -13,11 +13,11 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 // PORT
-app.listen(process.env.PORT, (err) => {
+app.listen(port, (err) => {
   if (err) {
     console.log("Não foi possível comunicar com o servidor. Erro: ", err);
   } else {
-    console.log("convert my money está online em", process.env.PORT);
+    console.log("convert my money está online em", port);
   }
 });
 
