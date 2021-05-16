@@ -8,6 +8,16 @@ h1 img {
   margin: 20px;
 }
 
+input[type=date] {
+  border: 2px solid #b4b4b4;
+  border-radius: 8px;
+  background: #e1e1e1;
+  font-size: 16px;
+  padding: 10px;
+  margin: 3px;
+  text-align: center;
+}
+
 input[type=number] {
   border: 2px solid #b4b4b4;
   border-radius: 8px;
@@ -16,6 +26,7 @@ input[type=number] {
   padding: 10px;
   margin: 3px;
 }
+
 
 button{
   background-color: #59ac48;

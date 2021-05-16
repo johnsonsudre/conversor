@@ -1,7 +1,27 @@
 <%- include('header') %>
 <form method="GET" action="/quotation">
-  <input type="number" name="quotation" id="quotation" placeholder="Cotação do dollar em R$"/><br><br>
-  <input type="number" name="quantity" id="quantity" placeholder="Quatidade de US$"/><br><br>
-  <button>Total em R$</button><br><br>
+  <!-- <input
+    type="date"
+    name="date"
+    id="date"
+    value="<%= todayInputValue %>"
+    placeholder="Data da cotação"
+  /> -->
+  <div><%= fullDateString %></div>
+  <br /><br />
+  <input
+    type="number"
+    name="quotation"
+    id="quotation"
+    placeholder="Cotação do dollar em R$"
+    value="<%= quotation %>"
+  /><br /><br />
+  <input
+    type="number"
+    name="quantity"
+    id="quantity"
+    placeholder="Quatidade de US$"
+  /><br /><br />
+  <button>Total em R$</button><br /><br />
 </form>
 <%- include('footer') %>
